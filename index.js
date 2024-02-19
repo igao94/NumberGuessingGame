@@ -17,7 +17,7 @@ while (running) {
   } else {
     attempts++;
 
-    if (guess === 1) {
+    if (attempts === 1) {
       window.alert(`CORRECT! It took you ${attempts} attempt!`);
       running = false;
     } else if (guess > answer) {
