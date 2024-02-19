@@ -17,7 +17,10 @@ while (running) {
   } else {
     attempts++;
 
-    if (guess > answer) {
+    if (guess === 1) {
+      window.alert(`CORRECT! It took you ${attempts} attempt!`);
+      running = false;
+    } else if (guess > answer) {
       window.alert(`TOO HIGH! TRY AGAIN!`);
     } else if (guess < answer) {
       window.alert(`TOO LOW! TRY AGAIN`);
